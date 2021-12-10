@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "6b6b1ca4-d03a-4e7d-8746-a37ac57f900a",
+		"name": "ApiFake",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Marca",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/marcas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"marcas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Veiculos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/veiculo/:{{id_marca}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"veiculo",
+						":{{id_marca}}"
+					],
+					"variable": [
+						{
+							"key": "{{id_marca}}",
+							"value": "22"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

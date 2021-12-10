@@ -1,0 +1,4 @@
+{
+	 "/veiculo/:id_marca": "/veiculo?id_marca=:id_marca"
+
+}	
